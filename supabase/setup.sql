@@ -8,7 +8,7 @@
 --    CHANGE THIS to the email you will log in with (keep the quotes).
 create or replace function public.is_admin() returns boolean
 language sql stable as $$
-  select coalesce(auth.jwt() ->> 'email', '') = lower('CHANGE_ME@example.com')
+  select coalesce(auth.jwt() ->> 'email', '') = lower('lpwolf0@gmail.com')
 $$;
 
 -- 2) Tables
